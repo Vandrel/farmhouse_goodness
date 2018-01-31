@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Farmhouse goodness</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Catamaran|Great+Vibes|Handlee" rel="stylesheet"> 
+	<link href="css/style.css" type="text/css" rel='stylesheet'>
+	<link href='css/bootstrap.css' type='text/css' rel='stylesheet'>
+	<link href='css/font-awesome.css' type='text/css' rel='stylesheet'>
+	<script src='scripts/jquery-3.2.1.min.js'></script>
+	<script src='scripts/jquery-ui.min.js'></script>
+	<script src='scripts/bootstrap.min.js'></script>
+	<script src='scripts/shop.js'></script>
+	<script src='scripts/simpleCart.js'></script>
+</head>
+<body>
+	<i id="cart-exit" class="fa fa-times exit-hidden" aria-hidden="true"></i>
+	<div class='container-fluid'>
+	<div class='row'>
+		<div class='banner'>
+			<h1 class='title2'> goodness</h1><h1 class='title1'>Farmhouse</h1>
+			<div class="dropdown menu">
+				<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Menu
+				<span class="caret"></span></button>
+				<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+					<li role="presentation"><a role="menuitem" tabindex="-1" href="index.html">Home</a></li>
+					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Shop</a></li>
+					<li role="presentation"><a role="menuitem" tabindex="-1" href="blog.html">Blog</a></li>
+					<li role="presentation" class="divider"></li>
+					<li role="presentation"><a role="menuitem" tabindex="-1" href="about.html">About us & Contact us</a></li>
+				</ul>
+  		</div> <!-- dropdown-menu-->
+		</div> <!--banner-->
+	</div> <!--row-->
+</div> <!--container-fluid-->
+	<div class='container-fluid'><div class='background row'></div></div>
+<div class='container'>
+	<div class='row'>
+		<div class='welcome text-center'>
+			<h3>Welcome to the store!</h3>
+			<br>
+			<p>Here is where you find all of the store items.</p>
+		</div> <!--welcome text-center-->
+	</div> <!--row-->
+</div> <!--container-->
+
+<div class='container'>
+	<div id='cart-background'>
+		
+	</div>
+	<div class='bot-bar row'>
+		<button class='cart'>View Cart<p class='item-count'>(0 items)</p></button>
+	</div>
+	<div id='show-cart' class='cart-contents-hidden'>
+		
+		<table class='cart-list'>
+			<tr>
+				<th>Item:</th>
+				<th>Quantity:</th>
+				<th>Price:</th>
+				<th>Total:</th>
+			</tr>
+		</table>
+	</div>
+	<div class='row'>
+		<div class='weekly-deal text-center'>
+			<h1>Deal of the week</h1>
+			<img class='weekly-deal-pic thumbnail' src='images/products/jars.jpg'/>
+			<h3 class='weekly-deal-name'>Mason Jar Canister Set (4) in Blue</h3>
+			<h4 class='weekly-deal-price'>$95.00</h4>
+			<div class='cart-ops'>
+				<button class='weekly-add cart-add cart-button'>Add to cart</button>
+				<div class='item-counter counter cart-button'>
+					<button class='weekly-minus minus'>-</button>
+					<div class='add-quantity'>
+						<p id='weekly-quantity'>0</p>
+					</div>
+					<button class='weekly-plus plus'>+</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class='row item-row'>
+	    <div class='item1 item text-center'>
+			<img class='thumbnail weekly-deal-pic' src='images/products/24in Tiers - Rustic Retreat.jpg'/>
+			<h3 class='item-name'>24" Tiers - Rustic Retreat</h3>
+			<h4 class='item-price'>$7.00</h4>
+			<div class='cart-ops'>
+				<button class='item1-add cart-button cart-add'>Add to cart</button>
+				<div class='item-counter counter cart-button'>
+					<button class='item1-minus minus'>-</button>
+					<div class='add-quantity'>
+						<p id='item1-quantity'>0</p>
+					</div>
+					<button class='item1-plus plus'>+</button>
+				</div>
+			</div>
+	    </div>
+	    <div class='item2 item text-center'>
+	        <img class='thumbnail weekly-deal-pic' src='images/products/Bath Towel - Punched Star Border.jpg'/>
+			<h3 class='item-name'>Bath Towel - Punched Star Border</h3>
+			<h4 class='item-price'>$21.00</h4>
+			<div class='cart-ops'>
+				<button class='item2-add cart-button cart-add'>Add to cart</button>
+				<div class='item-counter counter cart-button'>
+					<button class='item2-minus minus'>-</button>
+					<div class='add-quantity'>
+						<p id='item2-quantity'>0</p>
+					</div>
+					<button class='item2-plus plus'>+</button>
+				</div>
+			</div>
+	    </div>
+	</div>
+	<div class='row item-row'>
+	    <div class='item3 item text-center'>
+	        <img class='thumbnail weekly-deal-pic' src='images/products/Bath Towel - Red Sturbridge Star.jpg'/>
+			<h3 class='item-name'>Bath Towel - Red Sturbridge Star</h3>
+			<h4 class='item-price'>$21.00</h4>
+			<div class='cart-ops'>
+				<button class='item3-add cart-button cart-add'>Add to cart</button>
+				<div class='item-counter counter cart-button'>
+					<button class='item3-minus minus'>-</button>
+					<div class='add-quantity'>
+						<p id='item3-quantity'>0</p>
+					</div>
+					<button class='item3-plus plus'>+</button>
+				</div>
+			</div>
+	    </div>
+	    <div class='item4 item text-center'>
+	        <img class='thumbnail weekly-deal-pic' src='images/products/Christmas Sampler - Burlap Hand Towel.jpg'/>
+			<h3 class='item-name'>Christmas Sampler - Burlap Hand Towel</h3>
+			<h4 class='item-price'>$3.50</h4>
+			<div class='cart-ops'>
+				<button class='item4-add cart-button cart-add'>Add to cart</button>
+				<div class='item-counter counter cart-button'>
+					<button class='item4-minus minus'>-</button>
+					<div class='add-quantity'>
+						<p id='item4-quantity'>0</p>
+					</div>
+					<button class='item4-plus plus'>+</button>
+				</div>
+			</div>
+	    </div>
+	</div>
+	<div class='row item-row'>
+	    <div class='item5 item text-center'>
+	        <img class='thumbnail weekly-deal-pic' src='images/products/Christmas Sampler - Placemat.jpg'/>
+			<h3 class='item-name'>Christmas Sampler - Placemat</h3>
+			<h4 class='item-price'>$4.20</h4>
+			<div class='cart-ops'>
+				<button class='item5-add cart-button cart-add'>Add to cart</button>
+				<div class='item-counter counter cart-button'>
+					<button class='item5-minus minus'>-</button>
+					<div class='add-quantity'>
+						<p id='item5-quantity'>0</p>
+					</div>
+					<button class='item5-plus plus'>+</button>
+				</div>
+			</div>
+	    </div>
+	    <div class='item6 item text-center'>
+	        <img class='thumbnail weekly-deal-pic' src='images/products/Christmas Sampler - Table Runner 36in.jpg'/>
+			<h3 class='item-name'>Christmas Sampler - Table Runner 36"</h3>
+			<h4 class='item-price'>$10.50</h4>
+			<div class='cart-ops'>
+				<button class='item6-add cart-button cart-add'>Add to cart</button>
+				<div class='item-counter counter cart-button'>
+					<button class='item6-minus minus'>-</button>
+					<div class='add-quantity'>
+						<p id='item6-quantity'>0</p>
+					</div>
+					<button class='item6-plus plus'>+</button>
+				</div>
+			</div>
+	    </div>
+	</div>
+	<div class='row item-row'>
+	    <div class='item7 item text-center'>
+	        <img class='thumbnail weekly-deal-pic' src='images/products/Lathe Framed Print - All of Me Loves All Of You.jpg'/>
+			<h3 class='item-name'>Lathe Framed Print - All of Me Loves All Of You</h3>
+			<h4 class='item-price'>$21.95</h4>
+			<div class='cart-ops'>
+				<button class='item7-add cart-button cart-add'>Add to cart</button>
+				<div class='item-counter counter cart-button'>
+					<button class='item7-minus minus'>-</button>
+					<div class='add-quantity'>
+						<p id='item7-quantity'>0</p>
+					</div>
+					<button class='item7-plus plus'>+</button>
+				</div>
+			</div>
+	    </div>
+	    <div class='item8 item text-center'>
+	        <img class='thumbnail weekly-deal-pic' src='images/products/Fingertip Towel - Punched Star.jpg'/>
+			<h3 class='item-name'>Fingertip Towel - Punched Star</h3>
+			<h4 class='item-price'>$6.30</h4>
+			<div class='cart-ops'>
+				<button class='item8-add cart-button cart-add'>Add to cart</button>
+				<div class='item-counter counter cart-button'>
+					<button class='item8-minus minus'>-</button>
+					<div class='add-quantity'>
+						<p id='item8-quantity'>0</p>
+					</div>
+					<button class='item8-plus plus'>+</button>
+				</div>
+			</div>
+	    </div>
+	</div>
+	<div class='row item-row item-row-bottom'>
+	    <div class='item9 item text-center'>
+	        <img class='thumbnail weekly-deal-pic' src='images/products/Hand Towel - Dig It.jpg'/>
+			<h3 class='item-name'>Hand Towel - Dig It</h3>
+			<h4 class='item-price'>$8.95</h4>
+			<div class='cart-ops'>
+				<button class='item9-add cart-button cart-add'>Add to cart</button>
+				<div class='item-counter counter cart-button'>
+					<button class='item9-minus minus'>-</button>
+					<div class='add-quantity'>
+						<p id='item9-quantity'>0</p>
+					</div>
+					<button class='item9-plus plus'>+</button>
+				</div>
+			</div>
+	    </div>
+	    <div class='item10 item text-center'>
+	        <img class='thumbnail weekly-deal-pic' src='images/products/Lathe Framed - Shiplap.jpg'/>
+			<h3 class='item-name'>Lathe Framed - Shiplap</h3>
+			<h4 class='item-price'>$21.95</h4>
+			<div class='cart-ops'>
+				<button class='item10-add cart-button cart-add'>Add to cart</button>
+				<div class='item-counter counter cart-button'>
+					<button class='item10-minus minus'>-</button>
+					<div class='add-quantity'>
+						<p id='item10-quantity'>0</p>
+					</div>
+					<button class='item10-plus plus'>+</button>
+				</div>
+			</div>
+	    </div>
+	</div>
+</div>
+
+<footer>
+  <p id='credit'>Designed and coded by Dale Goodall</p>
+  <div class='socmed'>
+  	<h4>Find us on: </h4>
+	<a class='button social' href='https://www.facebook.com/farmhousegoodness'><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+	<a class="button social" href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+	<a class="button social" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+  </div>
+</footer>
+
+</body>
+</html>
